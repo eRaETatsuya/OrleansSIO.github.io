@@ -5,7 +5,7 @@
 | @Reseau | @Diffusion | VLAN| Masque décimal  / CIDR |
 |  172.28.96.0  |  172.28.127.255   | 240-249| 255.255.224.0 /19 |
 
-|  | Plan adressage sous réseau (VLAN)| ||
+|  | |Plan adressage sous réseau (VLAN) ||
 | ---------------------------------- | | | |
 | Subnet ID | @Réseau | Plage d'adresse | @Diffusion| Passerelle |
 | VLAN 240 |172.28.96.0 /24| 172.28.96.1 - 172.28.96.254 | 172.28.96.255| 172.28.96.1 |
