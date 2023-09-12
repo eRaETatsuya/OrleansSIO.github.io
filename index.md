@@ -1,6 +1,6 @@
 # Welcome to Orléans
 
-| Site d'Orléans |  |  
+| Site d'Orlean |  |  
 |------------|------------|
  | **LAN global**   |  |
 | Nombre d'hôtes :| 166 |
