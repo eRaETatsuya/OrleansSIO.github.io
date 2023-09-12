@@ -1,0 +1,7 @@
+site_name: Doc Orléans
+theme:
+  name: material
+
+nav :
+  - Home : index.md
+  - Convertisseur : Convertisseur.md
