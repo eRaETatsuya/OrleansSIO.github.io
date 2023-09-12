@@ -44,7 +44,7 @@
     **`switch(config)#vlan 240`**
     </br>
     **`switch(config-vlan)# name Management`**
-   - On peut repéter ce processus pour créer d'autres VLANs si nécessaire.
+   - On peut repéter ce processus pour créer d'autres VLANs si nécessaire nottament pour la création de la DMZ.
 
 4. **Attribution des Ports aux VLANs :**
    - On accéde au mode de configuration de l'interface du port qu'on souhaite attribuer à un VLAN pour notre part on va lui attribuer le port g0/1.
