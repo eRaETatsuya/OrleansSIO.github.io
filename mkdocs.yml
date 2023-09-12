@@ -1,4 +1,8 @@
-site_name: Orléans
+site_name: Doc Orléans
 theme:
   name: material
   custom_dir: overrides
+
+nav :
+  - Home : index.md
+  - Convertisseur : Convertisseur.md
