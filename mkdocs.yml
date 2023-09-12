@@ -3,3 +3,6 @@ theme:
   name: material
   custom_dir: overrides
 
+nav :
+  - Home : index.md
+  - Configuration du Switch : switch.md
