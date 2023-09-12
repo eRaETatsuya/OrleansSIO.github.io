@@ -32,7 +32,7 @@
 
 3. **Configuration des VLANs :**
 </br>
-   - On accède au mode de configuration VLAN en conf-t.
+   - On accéde au mode de configuration VLAN en conf-t.
    - Pour créer un VLAN il faut spécifier son numéro, pour créer notre vlan Management on utilise le vlan 240 et on lui donne un nom significatif : 
    </br>
     **`switch(config)# int vlan 240`**
