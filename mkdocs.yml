@@ -5,4 +5,5 @@ theme:
 
 nav :
   - Home : index.md
-  - Configuration du Switch : switch.md
+  - Configuration :
+    - -Switch : switch.md
