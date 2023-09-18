@@ -5,8 +5,8 @@
 ## Installation de SSH sur le Switch
 
 1. **Connexion au Switch :** On se connecte au switch Cisco via le câble console en utilisant un client de terminal.
-
-2. **Configuration SSH :**
+2. On a généré une paire de clés SSH RSA pour l'authentification avec la commande **`switch(config)# crypto key generate rsa`** puis ensuite vous entrez **`2048`**.
+3. **Configuration SSH :**
     On a activé le service SSH (version 2) en utilisant les commandes suivantes :
    </br>
     **`switch(config)# ip ssh version 2`** 
@@ -26,7 +26,7 @@
    **`copy running-config startup-config`**
    </br>
 
-   - De plus on a généré une paire de clés SSH RSA pour l'authentification avec la commande **`switch(config)# crypto key generate rsa`** puis ensuite vous entrez **`2048`**.
+
 
 ## Création de VLAN sur le Switch
 
