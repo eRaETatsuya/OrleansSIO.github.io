@@ -7,4 +7,3 @@ nav :
   - Home : index.md
   - Configuration :
     - -Switch : switch.md
-    - -DMZ : dmz.md
