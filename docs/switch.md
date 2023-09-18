@@ -60,6 +60,6 @@
 ## Activation du Routing
 - Le routage doit tout d'abord être activé sur le switch 
 </br>
-    **`switch(config)#ip routing`**
+**`switch(config)#ip routing`**
 
 
