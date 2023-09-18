@@ -6,4 +6,5 @@ theme:
 nav :
   - Home : index.md
   - Configuration :
+    - -Schéma : schema.md
     - -Switch : switch.md
