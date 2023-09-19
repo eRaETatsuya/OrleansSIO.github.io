@@ -30,7 +30,7 @@
 ## Site d'Orléans
 | Nom | Adresse | 
 |-----------|---------|
-|VLAN Management|172.28.96.1 /24|
+|VLAN Management|172.28.96.254 /24|
 |VLAN Serveur |172.28.97.254 /24|
 |VLAN Firewall |172.28.98.254 /28|
 |VLAN Internet |172.28.99.254 /28|
