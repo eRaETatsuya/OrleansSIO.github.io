@@ -30,6 +30,13 @@
 ## Site d'Orléans
 | Nom | Adresse | 
 |-----------|---------|
-|Controleur de Domaine|172.28.96.10 ; 172.28.97.10|
+|VLAN Management|172.28.96.1|
+|VLAN Serveur |172.28.97.254|
+|VLAN Firewall |172.28.98.254|
+|VLAN Internet |172.28.99.254|
+|VLAN Utilisateur |172.28.101.254|
 |DMZ|192.168.45.254|
+|Controleur de Domaine|172.28.96.10 ; 172.28.97.10|
+
+
 
