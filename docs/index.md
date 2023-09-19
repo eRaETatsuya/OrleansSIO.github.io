@@ -36,7 +36,7 @@
 |VLAN Internet |172.28.99.254 /28|
 |VLAN Utilisateur |172.28.101.254 /24|
 |DMZ|192.168.45.254 /24|
-|Controleur de Domaine|172.28.96.10 /24 ; 172.28.97.10 /24|
+|Contrôleur de Domaine|172.28.96.10 /24 ; 172.28.97.10 /24|
 
 
 
