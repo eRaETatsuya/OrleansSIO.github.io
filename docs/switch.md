@@ -58,7 +58,7 @@
    **`switch(config-if)#switchport access vlan 240`**
 
 ## Activation du Routing
-- Le routage doit tout d'abord être activé sur le switch 
+- Le routage doit tout d'abord être activé sur le switch.
 </br>
 **`switch(config)#ip routing`**
 
