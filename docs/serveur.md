@@ -1,8 +1,8 @@
-Création serveur ORL_DC_01 vm nutanix:
+## Création serveur ORL_DC_01 vm nutanix:
 
-Accéder au site nutanix via https://172.16.90.200:9440
+Accéder au site nutanix via **`https://172.16.90.200:9440`**
 </br>
-Se connecter avec ses id du réseau sio
+Se connecter avec ses id du réseau SIO
 </br>
 Créer une vm et la nommer selon la convention du cahier des charges soit ORL_X.
 </br>
@@ -12,7 +12,7 @@ On ajoute 2 cd-rom, un contenant l'ISO de windows, un contenant des pilotes néc
 </br>
 On ajoute également 2 cartes réseaux sur les bons vlans (vlan 240 et 241 dans notre cas).
 </br>
-![Create VM2](createvm2.png)
+![Create VM2](createvm2.PNG)
 </br>
 Cocher la case "Use this VM as an Agent VM" sur la page suivant et cliquer sur next.
 </br>
