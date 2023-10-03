@@ -6,7 +6,7 @@ theme:
 nav :
   - Home : index.md
   - Nigeria : 
-   - gg : niqe.md
+   - -gg : niqe.md
   - Configuration :
     - -Plan d'adressage : plan_d'adressage.md
     - -Schéma : schema.md
