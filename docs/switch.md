@@ -61,5 +61,12 @@
 - Le routage doit tout d'abord être activé sur le switch.
 </br>
 **`switch(config)#ip routing`**
+</br>
+## Mise en place du TFTP
+- Pour pouvoir mettre en place le tftpd on doit d'abord ouvrir un serveur tftp.
+- Pour ce faire on se rend sur MobaXterm, dans l'onglet "Servers" qui se trouve dans la barre du haut, le port est automatiquement configuré sur le port 69, il suffit juste de l'activer et sur notre switch qui se trouve sur le même réseau, on entre la commande suivante :
+</br>
+**`copy running-config tftp:`**
+  
 
 
