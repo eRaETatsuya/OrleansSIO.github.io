@@ -6,6 +6,9 @@ theme:
 nav :
   - Home : index.md
   - Configuration :
+    - -Plan d'adressage : plan_d'adressage.md
     - -Schéma : schema.md
     - -Switch : switch.md
     - -Serveur : serveur.md
+    - -Routeur : routeurs.md
+   
