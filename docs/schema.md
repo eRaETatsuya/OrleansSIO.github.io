@@ -1,4 +1,9 @@
-![Schéma](Schéma_Réseau.jpg)
+<center>
+  ![Schéma](Schéma_Réseau.jpg)
+</center>
 </br>
-## Ports connectés au switch
-![Schéma](Switch_schema_VLANS.jpg)
+## Attribution des vlans aux ports du switch
+<center>
+ ![Schéma](Switch_schema_VLANS.jpg)
+</center>
+
