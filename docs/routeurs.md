@@ -29,7 +29,8 @@ Les boutons des routeurs ne fonctionnaient plus, nous avons donc réinitialisés
 activer également l'interface et quitter
 6. Activer la passerelle par défaut : **`ip route 0.0.0.0 0.0.0.0 183.44.145.2`**
 7. créer une acl : **`access-list 1 permit 172.28.96.0 0.0.31.255`**
-8. Sur les interfaces virtuelles g0/0.249 et g0/0.240, il faut configurer le tag dot1Q 249 et 240. Ecriver les commandes suivantes:<br>
+8. Rentrer dans **`conf t`** et appliquer l'acl **`ip nat inside source list <numero acl> interface g0/1 overload  `**
+9. Sur les interfaces virtuelles g0/0.249 et g0/0.240, il faut configurer le tag dot1Q 249 et 240. Ecriver les commandes suivantes:<br>
             **`-int g0/0.249`**
             <br>
             **`-encapsulation dot1Q 249`**
@@ -53,7 +54,7 @@ activer également l'interface et quitter
 activer également l'interface et quitter
 6. Activer la passerelle par défaut : **`ip route 0.0.0.0 0.0.0.0 183.44.145.2`**
 7. créer une acl : **`access-list 1 permit 172.28.96.0 0.0.31.255`**
-8. Rentrer dans l'interface g0/0 **`int g0/0`** et appliquer l'acl **`ip access-group 1 in`**
+8. Rentrer dans **`conf t`** et appliquer l'acl **`ip nat inside source list <numero acl> interface g0/1 overload  `**
 9. Sur les interfaces virtuelles g0/0.249 et g0/0.240, il faut configurer le tag dot1Q 249 et 240. Ecriver les commandes suivantes:<br>
             **`-int g0/0.249`**
             <br>
