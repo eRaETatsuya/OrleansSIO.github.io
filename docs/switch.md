@@ -57,7 +57,7 @@
    </br>
    **`switch(config-if)#switchport access vlan 240`**
 
-## Activation du Routing
+## Activation du Routing :
 - Le routage doit tout d'abord être activé sur le switch.
 </br>
 **`switch(config)#ip routing`**
@@ -68,5 +68,8 @@
 </br>
 **`copy running-config tftp:`**
   
-
-
+6. **Configuration du relai DHCP :**
+- Le relai DHCP est fait pour indiquer ou se trouve le serveur DHCP
+</br>
+- Se placer dans l'interface du vlan 241 (vlan serveur) **`int vlan 241`** puis **`ip helper-adress 172.28.97.10`**
+</br>
