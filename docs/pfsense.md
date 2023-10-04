@@ -4,4 +4,4 @@
 
 **LAN** est l'entrée du pfsense, si on se repère au schéma on doit lui attribuer **`172.28.98.254`**, et pour le **WAN** **`192.168.45.1`**
 
-![pfsense](pfsense.PNG)
+![pfsense](pfsense.jpg)
