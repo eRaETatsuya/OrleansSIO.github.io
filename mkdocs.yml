@@ -9,6 +9,7 @@ nav :
     - -Plan d'adressage : plan_d'adressage.md
     - -Schéma : schema.md
     - -Switch : switch.md
+    - -PFsense : pfsense.md
     - -Serveur : serveur.md
     - -Routeur : routeurs.md
    
