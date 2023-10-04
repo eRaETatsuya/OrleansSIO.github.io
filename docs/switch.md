@@ -68,7 +68,7 @@
 </br>
 **`copy running-config tftp:`**
   
-6. **Configuration du relai DHCP :**
+## Configuration du relai DHCP
 - Le relai DHCP est fait pour indiquer ou se trouve le serveur DHCP
 </br>
 - Se placer dans l'interface du vlan 241 (vlan serveur) **`int vlan 241`** puis **`ip helper-adress 172.28.97.10`**
