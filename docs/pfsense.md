@@ -5,3 +5,15 @@
 **LAN** est l'entrée du pfSense. Si l'on se réfère au schéma, on doit lui attribuer l'adresse IP  **`172.28.98.254`**, et pour le **WAN**, l'adresse IP  **`192.168.45.1`**
 
 ![pfsense](pfsense.jpg)
+</br>
+
+# Configuration de la gateway pour le WAN et le LAN
+
+- **WAN** on lui attrtibue la passerelle **`192.168.45.254`**, qui est le **LAN** du Stormshield, qui nous sert de porte de sortie  
+![wan](gateway_wan_pfsense.png)
+
+- **LAN** on lui attribue la passerelle **`172.28.98.254`**
+![lan](gateway_lan_pfsense.png)
+
+- Sur le firewall pfsense, on active la règle **`Pass`**, qui va permettre de tout laisser passer sur le réseau sans filtres.
+![regle](regle_wan_pfsense.png)
