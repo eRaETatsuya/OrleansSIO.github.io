@@ -67,3 +67,16 @@ activer également l'interface et quitter
             **`-encapsulation dot1Q 240`**
             <br>
             **`-exit`**
+
+## Routeur Fibre et ADSL redirection de port 
+
+# Connexion au Routeur via SSH :
+J'ai utilisé un client SSH (Secure Shell) pour établir une connexion avec mon routeur :
+
+**`ssh admin@172.28.105.252`**
+
+# Configuration de la Règle de Redirection de Port :
+J'ai configuré une nouvelle règle de redirection de port pour acceder à notre site web, on a donc fait une redirection du port 80(HTTP) avec les commandes suivantes :
+
+**`conf t`**
+**`ip nat inside source static tcp 192.168.45.253 80 interface GigabitEthernet0/1 80`**
