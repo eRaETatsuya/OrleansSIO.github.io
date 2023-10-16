@@ -79,4 +79,5 @@ J'ai utilisé un client SSH (Secure Shell) pour établir une connexion avec mon 
 J'ai configuré une nouvelle règle de redirection de port pour acceder à notre site web, on a donc fait une redirection du port 80(HTTP) avec les commandes suivantes :
 
 **`conf t`**
+</br>
 **`ip nat inside source static tcp 192.168.45.253 80 interface GigabitEthernet0/1 80`**
