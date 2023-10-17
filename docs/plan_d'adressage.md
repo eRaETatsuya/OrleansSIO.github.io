@@ -35,7 +35,7 @@
 |VLAN 242 CORE2DMZ    |172.28.98.1 /24|
 |VLAN 243 ...         |Pas d'ip attribuée|
 |VLAN 245 Utilisateur |172.28.101.254 /24|
-|VLAN 249 transport   |172.28.105.250 /24|
+|VLAN 249 transport   |Pas d'ip attribuée |
 |VLAN 244 DMZ         |Pas d'ip attribuée |
 |Firewall virtuel     |172.28.98.254 /24|
 |Firewall IN(LAN)     |192.168.45.254 /24|
@@ -48,8 +48,9 @@
 |-----------|---------|
 |R1-ORL                |(int g0/0.249) 172.28.105.253 /24 ; (int g0/0.240) 172.28.96.100 /24|
 |R2-ORL                |(int g0/0.249) 172.28.105.252 /24 ; (int g0/0.240) 172.28.96.200 /24|
-|PFsense               |OUT(WAN) 192.168.45.1 /24  ;  IN(LAN) 172.28.98.254 /24|
+|PFsense               |OUT(WAN) 192.168.45.1 /24  ;  IN(LAN) 172.28.98.254 /24 ; interface management 172.28.96.250 /24|
 |Contrôleur de Domaine |172.28.96.10 /24  ; 172.28.97.10 /24|
+|Serveur web (Linux - Debian12)|192.168.45.253 /24 ; interface management 172.28.96.251 /24|
 
 
 
