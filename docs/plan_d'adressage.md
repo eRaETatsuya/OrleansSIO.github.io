@@ -51,6 +51,8 @@
 |PFsense               |OUT(WAN) 192.168.45.1 /24  ;  IN(LAN) 172.28.98.254 /24 ; interface management 172.28.96.250 /24|
 |Contrôleur de Domaine |172.28.96.10 /24  ; 172.28.97.10 /24|
 |Serveur web (Linux - Debian12)|192.168.45.253 /24 ; interface management 172.28.96.251 /24|
+|Serveur DNS forwarder (bind9)|172.28.97.20 /24|
+|Serveur Split DNS (bind9)|192.168.45.252 /24|
 
 
 
