@@ -53,20 +53,20 @@ On a signé le CSR du serveur avec la nouvelle CA pour émettre un certificat :
 
 ## On modifie le fichier .conf de notre site d'Orleans qui se trouve dans cette racine /etc/apache2/sites-available et on redirige la page http en page https
   
-  <VirtualHost *:80>
-      ServerName Orleans.sportludique.fr
-      ServerAlias www.orleans.sportludique.fr
-  
-      Redirect permanent / https://192.168.45.253
-  </VirtualHost>
-  
-  <VirtualHost *:443>
-      ServerName Orleans.sportludique.fr
-      ServerAlias www.orleans.sportludique.fr
-      DocumentRoot /var/www/html
-  
-      SSLEngine on
-      SSLCertificateFile /certificats/server.crt
-      SSLCertificateKeyFile /mykey/server.key
-  
-  </VirtualHost>
+    <VirtualHost *:80>
+        ServerName Orleans.sportludique.fr
+        ServerAlias www.orleans.sportludique.fr
+    
+        Redirect permanent / https://192.168.45.253
+    </VirtualHost>
+    
+    <VirtualHost *:443>
+        ServerName Orleans.sportludique.fr
+        ServerAlias www.orleans.sportludique.fr
+        DocumentRoot /var/www/html
+    
+        SSLEngine on
+        SSLCertificateFile /certificats/server.crt
+        SSLCertificateKeyFile /mykey/server.key
+    
+    </VirtualHost>
