@@ -26,7 +26,7 @@ On a généré une clé privée pour la nouvelle CA :
 </br>
 **`openssl genrsa -out nouvelle_ca.key 4096`**
 </br>
-Ensuite, on a créé un certificat auto-signé pour cette CA :
+Ensuite, on a créé un certificat pour cette CA :
 </br>
 **`openssl req -x509 -new -nodes -key nouvelle_ca.key -sha256 -days 365 -out nouvelle_ca.crt`**
 </br>
