@@ -20,7 +20,7 @@ Après l'installation, j'ai vérifié qu'Apache fonctionnait correctement en acc
 
 # Mise en place du HTTPS
 
-##Création de la nouvelle CA :
+## Création de la nouvelle CA :
 
 On a généré une clé privée pour la nouvelle CA :
 </br>
