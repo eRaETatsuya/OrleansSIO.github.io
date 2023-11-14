@@ -10,5 +10,12 @@ Pour la configuration du firewall, nous l'avions d'abord réinitialisé en resta
 
 # Configuration des interfaces réseau du firewall
 
-1. 
+1. Sur l'interface du stormshield, il faut se rentre dans **`configuration`** et dans **`interfaces`**. 
+2. En haut à droite de l'interface stormshield, appuyer sur **écriture** pour avoir des droits de modification. Sélectionner l'interface **IN**, dans l'onglet configuration générale:
+- Complétez les informations de la zone Plan d'adressage :
+- Champ Adressage : sélectionnez Dynamique / Statique.
+- Champ Adresse IPv4 : sélectionnez IP fixe (statique).
+- Dans la grille : cliquez sur Ajouter et renseignez 192.168.45.254/24. (LAN)
+- Cliquez sur Appliquer pour valider. 
 
+Faire la même chose pour le OUT, et renseignez comme ip 172.28.105.1/24. (WAN)
