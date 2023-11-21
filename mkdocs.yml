@@ -15,4 +15,4 @@ nav :
     - -Serveur http(s) : http_serv.md
     - -Stormshield : stormshield.md
     - -resolveur : resolveur_dns.md
-   
+    - -Reverse Proxy : reverse_proxy.md
