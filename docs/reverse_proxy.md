@@ -7,9 +7,9 @@ Configurer Nginx en tant que serveur web et reverse proxy sur un serveur Debian 
 
 ### 1. Installation de Nginx
 </br>
-**``sudo apt update``**
+**`sudo apt update`**
 </br>
-**``sudo apt install nginx``**
+**`sudo apt install nginx`**
 
 2. Configuration de Base
 Réglage du pare-feu pour autoriser le trafic HTTP/HTTPS.
