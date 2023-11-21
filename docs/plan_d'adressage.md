@@ -55,6 +55,7 @@
 |Serveur Split DNS (bind9)|192.168.45.252 /24|
 |Serveur Docker|192.168.45.251 /24|
 |Serveur MariaDB|192.168.145.10 /24|
+|Serveur Nginx|192.168.45.250 /24|
 
 
 
