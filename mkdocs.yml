@@ -13,6 +13,6 @@ nav :
     - -Serveur : serveur.md
     - -Routeur : routeurs.md
     - -Serveur http(s) : http_serv.md
-    - -Stormshield : stormshield.md
+    - -Stormshield : Stormshield.md
     - -resolveur : resolveur_dns.md
    
