@@ -1,4 +1,4 @@
-![Catalyst 3560](catalyst.png )
+![Catalyst 3560](../img/catalyst.png )
 # Guide d'Installation de SSH et Création de VLAN sur un Switch Cisco
 
 
