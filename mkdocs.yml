@@ -7,7 +7,7 @@ nav :
   - Home : ./Document/index.md
   - Configuration :
     - -Plan d'adressage :  Document/plan_adressage.md
-    - -Schéma :  Document/schema.md
+    - -Schéma :  ./Document/schema.md
     - -Switch :  Document/switch.md
     - -PFsense :  Document/pfsense.md
     - -Serveur :  Document/serveur.md
