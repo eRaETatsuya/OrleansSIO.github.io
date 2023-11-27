@@ -56,6 +56,12 @@
 |Serveur Docker|192.168.45.251 /24|
 |Serveur MariaDB|192.168.145.10 /24|
 |Serveur Nginx|192.168.45.250 /24|
+|Serveur VPN|192.168.45.249 /24|
+|PASSIF Reverse PROXY|192.168.45.248 /24|
+|INT WIREGUARD (Sur serveur VPN)|10.255.255.1/24|
+|VIP PASSIF REVERSE PROXY|192.168.45.200/24|
+
+
 
 
 
