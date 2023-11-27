@@ -4,7 +4,7 @@ theme:
   custom_dir: overrides
 
 nav :
-  - Home : Document/index.md
+  - Home : ../Document/index.md
   - Configuration :
     - -Plan d'adressage :  Document/plan_adressage.md
     - -Schéma :  Document/schema.md
