@@ -4,16 +4,16 @@ theme:
   custom_dir: overrides
 
 nav :
-  - Home : ./Document/index.md
+  - Home : index.md
   - Configuration :
-    - -Plan d'adressage :  ././Document/plan_adressage.md
-    - -Schéma :  ./Document/schema.md
-    - -Switch :  Document/switch.md
-    - -PFsense :  Document/pfsense.md
-    - -Serveur :  Document/serveur.md
-    - -Routeur :  Document/routeurs.md
-    - -Serveur http(s) :  Document/http_serv.md
-    - -Stormshield :  Document/Stormshield.md
-    - -resolveur :  Document/resolveur_dns.md
-    - -Reverse Proxy :  Document/reverse_proxy.md
+    - -Plan d'adressage :  plan_adressage.md
+    - -Schéma :  schema.md
+    - -Switch :  switch.md
+    - -PFsense : pfsense.md
+    - -Serveur : serveur.md
+    - -Routeur :  routeurs.md
+    - -Serveur http(s) :  http_serv.md
+    - -Stormshield :  Stormshield.md
+    - -resolveur :  resolveur_dns.md
+    - -Reverse Proxy :  reverse_proxy.md
     
