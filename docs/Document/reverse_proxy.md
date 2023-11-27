@@ -148,4 +148,43 @@ Conclusion
 La configuration de Nginx en tant que serveur web et reverse proxy a été réalisée avec succès. Les différentes étapes ont permis de mettre en place des redirections, de configurer SSL/TLS, et de gérer plusieurs sites sur un même serveur.
 
 
-La configuration finale permet à Nginx de servir plusieurs sites web de manière sécurisée avec des redirections appropriées.
+
+#Compte Rendu d'Installation et Configuration de Heartbeat
+
+
+Configuration de ha.cf :
+
+Sur le serveur srv-nginx2 :
+
+
+        node srv-nginx2
+        ucast ens3 192.168.45.250
+        node srv-nginx
+        ucast ens3 192.168.45.248
+
+Sur le serveur srv-nginx :
+
+        node srv-nginx2
+        ucast ens3 192.168.45.250
+        node srv-nginx
+        ucast ens3 192.168.45.248
+
+Ces configurations permettent aux serveurs de communiquer entre eux via le réseau spécifié.
+
+Création du fichier authkeys :
+
+Génération d'une clé d'authentification avec la commande :
+
+        export AUTH_KEY="$(command dd if='/dev/urandom' bs=512 count=1 2>'/dev/null' | command openssl sha1 | command cut --delimiter=' ' --fields=2)"
+
+Écriture de la clé générée dans /etc/ha.d/authkeys.
+Configuration haresources :
+
+Sur le serveur srv-nginx2 :
+
+**`srv-nginx2 IPaddr::192.168.45.200/24/ens3`**
+Cette configuration spécifie que srv-nginx2 est le serveur préféré pour l'adresse IP virtuelle 192.168.45.200.
+
+Sur le serveur srv-nginx :
+
+**`srv-nginx`**
