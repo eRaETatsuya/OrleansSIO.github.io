@@ -1,4 +1,4 @@
-![routeurs](routeur.png)
+![routeurs](../routeur/routeur.png)
 # Guide d'installation des routeurs cisco R1_ORL et R2_ORL
 
 
@@ -13,7 +13,7 @@ Les boutons des routeurs ne fonctionnaient plus, nous avons donc réinitialisés
 5. Créer un mot de passe pour le mode privilege **`Enable secret "mdp"`** puis pour l'accès à la console **`Password "mdp"`**
 6. Pour finir taper **`confreg 2102`** et **`copy startup-config running-config`**
 
-## Installer SSH [**ici**](/OrleansSIO.github.io/switch/)
+## Installer SSH [**ici**](/Document/switch/)
 
 ## Adressage IP d'une interface d'un routeur cisco 
 
