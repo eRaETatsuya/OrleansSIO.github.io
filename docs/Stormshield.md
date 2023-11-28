@@ -1,6 +1,6 @@
-![SN210](../stormshield/stormshield_SN210.png) 
+![SN210](../Stormshield/Stormshield_SN210.png) 
 
-# Configuration d'un firewall stormshield (SN210)
+# Configuration d'un firewall Stormshield (SN210)
 
 Pour la configuration du firewall, nous l'avions d'abord réinitialisé en restant appuyer pendant plusieurs secondes sur le bouton qui se trouve à l'arrière du firewall.
 
@@ -10,17 +10,17 @@ Pour la configuration du firewall, nous l'avions d'abord réinitialisé en resta
 
 # Configuration des interfaces réseau du firewall
 
-1. Sur l'interface du stormshield, il faut se rentre dans **`configuration`** et dans **`interfaces`**. 
-2. En haut à droite de l'interface stormshield, appuyer sur **`écriture`** pour avoir des droits de modification. Sélectionner l'interface **`IN`**, dans l'onglet configuration générale:
+1. Sur l'interface du Stormshield, il faut se rentre dans **`configuration`** et dans **`interfaces`**. 
+2. En haut à droite de l'interface Stormshield, appuyer sur **`écriture`** pour avoir des droits de modification. Sélectionner l'interface **`IN`**, dans l'onglet configuration générale:
 - Complétez les informations de la zone Plan d'adressage :
 - Champ Adressage : sélectionnez Dynamique / Statique.
 - Champ Adresse IPv4 : sélectionnez IP fixe (statique).
 - Dans la grille : cliquez sur Ajouter et renseignez 192.168.45.254/24. (LAN)
-![SN210](../stormshield/Interface_IN.png) 
+![SN210](../Stormshield/Interface_IN.png) 
 - Cliquez sur Appliquer pour valider. 
 
 Faire la même chose pour le OUT, et renseignez comme ip 172.28.105.1/24. (WAN)
-![SN210](../stormshield/Interface_OUT.png) 
+![SN210](../Stormshield/Interface_OUT.png) 
 
 La connexion sera perdu, il faudra utiliser la nouvelle adresse IP pour vous connecter au firewall
 
@@ -31,12 +31,12 @@ La connexion sera perdu, il faudra utiliser la nouvelle adresse IP pour vous con
 - Ensuite, créer les règles de NAT. Cliquer sur la catégorie **`NAT`** et sur **`Nouvelle règle`** et sur **`règle simple`** .
 - Configurer comme sur l'image :
 
-![NAT](../stormshield/NAT.png) 
+![NAT](../Stormshield/NAT.png) 
 
 # Configuration filtrage
 
 - Même principe, se diriger vers la catégorie **`filtrage`** et créer une nouvelle règle.
-![SN210](../stormshield/Filtrage.png) 
+![SN210](../Stormshield/Filtrage.png) 
 - Il est important que le niveau d'inspection soit en **`Ne pas détécter`** car il se pourrait que la protection antivirus de Stormshield bloque les requêtes.
 - La première règle autoriser tout le trafic sortant depuis n'importe quel port source vers n'importe quel port destination sauf le port de destination, qui doit être le port DNS.
 - La deuxième autorise tout le trafic sortant sans aucune restriction.
@@ -49,7 +49,7 @@ La connexion sera perdu, il faudra utiliser la nouvelle adresse IP pour vous con
 - Il faut créer une **`machine`**, nom de l'objet à mettre **`vip_transport`** ip : 172.28.105.254 et cliquer sur créer(la vip est utilisées pour la redondance de connexion car nous 
 utilisons le protocole hsrp(protocole de redondance)).
 - Se diriger vers **`routeur`** le **`nom de l'objet`** est **`hsrp_gateway`** puis **`dans passerelles utilisées`** , cliquer sur ajouter.
-![SN210](../stormshield/hrsp_gateway.png) 
+![SN210](../Stormshield/hrsp_gateway.png) 
 - Dans la catégorie **`passerelle`** indiquer la machine créer plus tôt qui correspondont à la VIP (vip_transport).
 - Création des routes : cliquer sur ajouter et rajouter ces routes :
-![SN210](../stormshield/Routes.png) 
+![SN210](../Stormshield/Routes.png) 
