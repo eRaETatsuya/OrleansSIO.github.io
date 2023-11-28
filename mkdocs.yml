@@ -18,3 +18,4 @@ nav :
     - -Reverse Proxy :  reverse_proxy.md
     - -Serveur DNS :  serveur_dns.md
     - -Serveur Docker: serveur_docker.md
+    - -Serveur VPN: VPN_WireGuard.md
