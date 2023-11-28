@@ -68,6 +68,12 @@ sudo systemctl restart bind9
 ## Étape 2: Création des fichiers de zone
 
 ### 2.1: Création du fichier de zone interne
+Nous avons besoin d'un fichier de zone interne, pour le créer:
+```bash
+sudo cat db.internal
+```
+Dans ce fichier doit se trouver ça :
+
 ```bash
 
 $TTL 86400
@@ -101,6 +107,8 @@ chat IN CNAME rp1.orleans.sportludique.fr.
 un fichier de zone interne facilite la résolution des noms de domaine à l'intérieur d'un réseau privé, en associant des noms conviviaux à des adresses IP et en organisant la structure des ressources au sein du réseau local. Cela contribue à une gestion efficace des ressources et à une navigation plus conviviale pour les utilisateurs du réseau.
 
 ### 2.2 Création du fichier de zone externe
+
+Même principe que le fichier de zone interne, sauf que le fichier doit s'appeler **`db.external`**
 ```bash
 User
 
