@@ -133,3 +133,16 @@ Ensuite dans le fichier de conf de cette interface on va déclarer le client
 On peut maintenant rallumer l'interface après avoir enregistré la configuration
 
     sudo wg-quick up wg0
+
+
+# Étape 3: Connexion au VPN depuis le client :
+
+## 3.1 Se connecter au vpn du prof sur son pc : 
+
+Se connecter avec OpenVPN au VPN du professeur
+
+## 3.2 Se connecter au vpn Wireguard :
+
+Il faut créer une vm windows 10 qui est connecté en réseau NAT dans la configuration de la VM.
+
+Ensuite il faut importer la conf vpn dans le client wireguard et cliquer sur "Activer".
