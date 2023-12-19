@@ -70,3 +70,39 @@ On modifie le fichier .conf de notre site d'Orleans qui se trouve dans cette rac
         SSLCertificateKeyFile /mykey/server.key
     
     </VirtualHost>
+
+
+# Rapport de Résolution de Problème :
+
+## Problème Signalé
+Le site web ne fonctionnait pas correctement, la page restait redirigée sur un seul serveur web.
+
+## Étapes de Résolution
+
+1. **Désactivation du Port 443 sur les deux serveurs :**
+   ```bash
+   sudo a2dismod ssl
+   sudo systemctl restart apache2
+   
+  ### Identification du Problème
+Après avoir désactivé le port 443, il a été constaté que la redirection persistait. Cela a conduit à la recherche d'autres causes potentielles.
+
+### Découverte du Fichier .htaccess
+En examinant les serveurs web, un fichier `.htaccess` a été découvert à la racine du site. Ce fichier contenait des directives de redirection forcée vers le port 443.
+
+### Suppression du Fichier .htaccess
+Le fichier `.htaccess` a été supprimé pour éliminer les directives de redirection indésirables.
+```bash
+rm .htaccess
+
+# Suppression du Favicon et Son Impact
+
+Suite à l'identification du favicon comme un facteur contribuant à la redirection indésirable, le favicon a été supprimé. Le favicon personnalisé empêchait le reverse proxy de réaliser la redirection vers le deuxième serveur web.
+
+## Réactivation du Port 443
+
+Après la suppression du fichier `.htaccess` et du favicon, le port 443 a été réactivé avec la commande `a2enmod`.
+
+```bash
+sudo a2enmod ssl
+sudo systemctl restart apache2
