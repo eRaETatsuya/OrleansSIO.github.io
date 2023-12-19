@@ -141,7 +141,7 @@ On peut maintenant rallumer l'interface après avoir enregistré la configuratio
 
 Se connecter avec OpenVPN au VPN du professeur
 
-## 3.2 Se connecter au vpn Wireguard :
+## 3.2 Se connecter au vpn Wireguard sur une vm:
 
 Il faut créer une vm windows 10 qui est connecté en réseau NAT dans la configuration de la VM.
 
