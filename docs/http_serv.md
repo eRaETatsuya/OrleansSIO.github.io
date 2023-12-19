@@ -92,17 +92,16 @@ En examinant les serveurs web, un fichier `.htaccess` a été découvert à la r
 
 ### Suppression du Fichier .htaccess
 Le fichier `.htaccess` a été supprimé pour éliminer les directives de redirection indésirables.
-```bash
-rm .htaccess
+      
+      rm .htaccess
 
 # Suppression du Favicon et Son Impact
 
-Suite à l'identification du favicon comme un facteur contribuant à la redirection indésirable, le favicon a été supprimé. Le favicon personnalisé empêchait le reverse proxy de réaliser la redirection vers le deuxième serveur web.
+Suite à l'identification du favicon de la page par défaut d'Apache comme un facteur contribuant à la redirection indésirable, le favicon a été supprimé. Le favicon personnalisé empêchait le reverse proxy de réaliser la redirection vers le deuxième serveur web.
 
 ## Réactivation du Port 443
 
 Après la suppression du fichier `.htaccess` et du favicon, le port 443 a été réactivé avec la commande `a2enmod`.
 
-```bash
-sudo a2enmod ssl
-sudo systemctl restart apache2
+     sudo a2enmod ssl
+     sudo systemctl restart apache2
