@@ -8,7 +8,9 @@ nav :
   
   - Configuration :
     - -Plan d'adressage :  plan_adressage.md
-    - -Schéma :  schema.md
+    - Schéma : 
+      - -Infrastructure : schema.md
+      - -Attribution des Ports : ports.md
     - -Switch :  switch.md
     - -PFsense : pfsense.md
     - -Serveur : serveur.md
