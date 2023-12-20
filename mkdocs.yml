@@ -5,13 +5,17 @@ theme:
 
 nav :
   - Home : index.md
+  
   - Configuration :
     - -Plan d'adressage :  plan_adressage.md
     - -Schéma :  schema.md
     - -Switch :  switch.md
     - -PFsense : pfsense.md
     - -Serveur : serveur.md
-    - -Routeur :  routeurs.md
+    - -Routeur :  
+      - Configuration : routeurs.md
+      - NAT : NAT.md
+      
     - -Serveur http(s) :  http_serv.md
     - -Stormshield :  Stormshield.md
     - -Resolveur :  resolveur_dns.md
