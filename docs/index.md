@@ -10,11 +10,11 @@ Le sportludique d'Orléans a besoin d'une infrastructure réseau pour pouvoir g�
 
 Nous sommes une équipe de 3 étudiants en 2ème année de BTS SIO (Services Informatiques aux Organisations) au lycée Fulbert de Chartres.
 
+- [Mateja](https://www.linkedin.com/in/mateja-klisura/)
+- [Lohann](https://www.linkedin.com/in/lohann-auffret-a3b38324b/)
+- [Yan](https://www.linkedin.com/in/yan-kobtane-935838239/)
+ 
 
-- [Lohann]
-- [Yan]
-
-[Mateja](https://www.linkedin.com/in/mateja-klisura/){:target="_blank"}
 
 
 
