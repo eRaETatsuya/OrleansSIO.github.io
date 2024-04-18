@@ -27,3 +27,4 @@ nav :
     - -Serveur VPN: VPN_WireGuard.md
     - -Serveur Hmail: Hmail.md
     - -Guacamole : Guac.md
+    - -Squid : Squid.md
