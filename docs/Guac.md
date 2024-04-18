@@ -135,7 +135,7 @@ Nous redémarrons les services liés à Guacamole :
         sudo systemctl restart tomcat9 guacd mariadb
 
 
-On peut maintenant se connecter à notre interface web en entrant ``*172.28.97.30:8080/guacamole*`` ou ``*guac.orleans.sportludique.fr:8080/guacamole*``
+On peut maintenant se connecter à notre interface web en entrant ``172.28.97.30:8080/guacamole`` ou ``guac.orleans.sportludique.fr:8080/guacamole``
 
 ![Connexion-a-Apache-Guacamole](https://github.com/eRaETatsuya/OrleansSIO.github.io/assets/144692551/38956b58-21a4-455c-bfb0-d9ac045d489c)
 
