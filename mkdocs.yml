@@ -26,3 +26,4 @@ nav :
     - -Serveur Docker: serveur_docker.md
     - -Serveur VPN: VPN_WireGuard.md
     - -Serveur Hmail: Hmail.md
+    - -Serveur Squid: Serveur_Squid.md

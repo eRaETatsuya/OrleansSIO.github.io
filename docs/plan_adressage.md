@@ -48,9 +48,10 @@
 |-----------|---------|
 |R1-ORL                |(int g0/0.249) 172.28.105.253 /24 ; (int g0/0.240) 172.28.96.100 /24|
 |R2-ORL                |(int g0/0.249) 172.28.105.252 /24 ; (int g0/0.240) 172.28.96.200 /24|
-|PFsense               |OUT(WAN) 192.168.45.1 /24  ;  IN(LAN) 172.28.98.254 /24 ; interface management 172.28.96.250 /24|
+|OPNsense               |OUT(WAN) 192.168.45.1 /24  ;  IN(LAN) 172.28.98.254 /24 ; interface management 172.28.96.250 /24; DMZ PRIVEE 192.168.45.254/24|
 |Contrôleur de Domaine |172.28.96.10 /24  ; 172.28.97.10 /24|
 |Serveur web (Linux - Debian12)|192.168.45.253 /24 ; interface management 172.28.96.251 /24|
+|SQUID|172.28.98.253 /24  ; interface management 172.28.96.253 /24;|
 |Serveur DNS forwarder (bind9)|172.28.97.20 /24|
 |Serveur Split DNS (bind9)|192.168.45.252 /24|
 |Serveur Docker|192.168.45.251 /24|
@@ -63,6 +64,7 @@
 |PASSIF Serveur WEB|192.168.45.247/24|
 |HMail Serveur|192.168.45.240/24|
 |HTTP SLAM Serveur|192.168.45.246/24|
+
 
 
 

@@ -1,4 +1,4 @@
-# Configuration du Firewall Pfsense
+# Configuration du Firewall OPNsense
 
 - Pour la configuration du pare-feu, le début est très simple : il suffit de lui attribuer 2 interfaces réseau, **`LAN`** **et** **`WAN`**;
 
