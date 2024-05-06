@@ -59,3 +59,54 @@ squid -k check
 
 Se diriger vers Firefox, puis dans les paramètres, chercher proxy, puis recenser l'ip et le port du proxy:
 Le notre c'est 172.28.98.253:3128 et cliquer sur `Utiliser également ce proxy pour HTTPS`
+
+### 3 Installation de SquidGuard
+
+Squid ne peut bloquer que des URLs une par une, ce qui est long, donc on va installer SquidGuard
+
+```bash
+apt-get install squidguard
+```
+Une fois ceci fait, on signale à squid d’utiliser squidGuard. Pour cela, on modifie /etc/squid3/squid.conf
+```bash
+url_rewrite_program /usr/bin/squidGuard
+```
+
+### 3.2 Configuration du logiciel
+
+La configuration doit se faire avant l’installation des bases de données. Le fichier de configuration est, en général,
+/etc/squidGuard/squidGuard.conf
+
+### 3.3 Les bases de filtrage
+On rapatrie une base de filtrage et on l’installe
+
+```bash
+cd /var/lib/squidguard/db
+wget http://dsi.ut-capitole.fr/blacklists/download/blacklists.tar.gz
+# On decompacte, un repertoire blacklists est alors cree
+tar zxvf blacklists.tar.gz
+# On cree un lien symbolique pour garder la notion de dest
+ln -s blacklists dest
+# Pour accelerer le traitement (mais en reduisant considerablement le nombre de domaines filtres)
+cd dest/adult
+cp domains domains.originel
+echo "playboy.com" >domains
+echo "sex.com" >>domains
+echo "lesitequevousvoulezajouter.com" >> domains
+chown proxy:proxy domains
+```
+
+La structure des fichiers textes contenant la liste est créée. Squidguard peut fonctionner tel quel (il recompilera les bases en m´emoire au démarrage), mais cela ralentira considérablement tout démarrage ou redémarrage.
+Il faut donc créer (compiler) les bases de donn´ees avant le lancement.
+Il faudra prendre la précaution d’arrêter le squid avant, si on veut que la compilation soit rapide.
+
+```bash
+mv database db
+service squid stop
+/usr/bin/squidGuard -P -d -b -C all
+chown -R proxy:proxy /var/lib/squidguard/db
+service squid start
+```
+Cette commande va compiler les bases de donn´ees qui sont utilis´ees dans le squidGuard.conf. Comme la
+commande a ´et´e faite par root, les fichiers domains.db et urls.db lui appartiennent, il faut changer le propri´etaire.
+On peut alors relancer le squid
