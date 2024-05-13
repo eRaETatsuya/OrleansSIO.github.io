@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>-Serveur Docker - Doc Orléans</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+        
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Doc Orléans</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#configuration-collapse" aria-expanded="false">
+                    Configuration
+                </a>
+                <div class="collapse" id="configuration-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../plan_adressage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Plan d'adressage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#schéma-⤵️-collapse" aria-expanded="false">
+            Schéma ⤵️
+        </a>
+
+        <div class="collapse" id="schéma-⤵️-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../schema/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Infrastructure
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../ports/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Attribution des Ports
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../switch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Switch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../pfsense/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -PFsense
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../serveur/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#routeur-⤵️-collapse" aria-expanded="false">
+            Routeur ⤵️
+        </a>
+
+        <div class="collapse" id="routeur-⤵️-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../routeurs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Configuration
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../NAT/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NAT
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../http_serv/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur http(s)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Stormshield/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Stormshield
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../resolveur_dns/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Resolveur
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../reverse_proxy/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Reverse Proxy
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../serveur_dns/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur DNS
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur Docker
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../VPN_WireGuard/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur VPN
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Hmail/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur Hmail
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Guac/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Guacamole
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Squid/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Squid
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../serveur_dns/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../VPN_WireGuard/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item">
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="creation-du-serveur-docker">Création du serveur Docker</h1>
+<h2 id="etape-1-creation-du-serveur-docker-sur-nutanix">Étape 1: Création du Serveur Docker sur Nutanix</h2>
+<h3 id="11-prerequis">1.1 Prérequis</h3>
+<p>Avant de commencer, il faut créer la machine virtuelle sur Nutanix, avec un OS Debian.</p>
+<h3 id="12-installation-de-docker">1.2 Installation de Docker</h3>
+<p>Pour installer Docker, on utilise la documentation officiel.
+Sur la machine, recopier ces lignes.</p>
+<pre><code class="language-bash">
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+echo \
+  &quot;deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+  $(. /etc/os-release &amp;&amp; echo &quot;$VERSION_CODENAME&quot;) stable&quot; | \
+  sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+</code></pre>
+<p>Pour vérifier que l'installation s'est bien passée :</p>
+<pre><code class="language-bash">sudo docker run hello-world
+</code></pre>
+<h2 id="etape-2-creation-dun-conteneur-nodejs">Étape 2: Création d'un conteneur Node.js</h2>
+<h3 id="21-prerequis">2.1 Prérequis</h3>
+<p>Avant de commencer, il faut créer un nouveau dossier qui va contenir notre application Node.js.</p>
+<pre><code class="language-bash">mkdir test-app
+cd test-app
+</code></pre>
+<h3 id="22-creation-de-lapplication-nodejs">2.2 Création de l'application Node.js</h3>
+<p>Création d'un fichier app.js qui doit contenir ce code:</p>
+<pre><code class="language-javascript">// app.js
+const http = require('http');
+
+const server = http.createServer((req, res) =&gt; {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello, Docker!\n');
+});
+
+const port = process.env.PORT || 3000;
+
+server.listen(port, () =&gt; {
+  console.log(`Server running on http://192.168.45.251:${port}`);
+});
+</code></pre>
+<p>Ensuite créer un fichier Dockerfile qui se situera dans le même répertoire, il doit contenir cela :</p>
+<pre><code class="language-docker"># Use the official Node.js image
+FROM node:14
+
+# Set the working directory
+WORKDIR /testnodejsdocker/
+
+# Install app dependencies
+RUN npm install
+
+# Bundle app source
+COPY . .
+
+# Expose the port
+EXPOSE 3000
+
+# Command to run the application
+CMD [&quot;node&quot;, &quot;app.js&quot;]
+</code></pre>
+<h3 id="23-creation-de-limage-docker">2.3 Création de l'image Docker</h3>
+<p>Pour créer l'image Docker, il faut utiliser la commande suivante :</p>
+<pre><code class="language-bash">sudo docker build -t nodejs .
+</code></pre>
+<h3 id="24-lancement-du-conteneur">2.4 Lancement du conteneur</h3>
+<p>Pour lancer le conteneur sur le port 80, il faut utiliser la commande suivante :</p>
+<pre><code class="language-bash">sudo docker run -d -p 80:3000 nodejs
+</code></pre>
+<h3 id="25-verification-de-lapplication">2.5 Vérification de l'application</h3>
+<p>Pour vérifier que l'application fonctionne, dirigez-vous sur internet et copier <strong><code>http://192.168.45.251</code></strong>
+Comme l'enregistrement DNS CNAME a déjà été fait sur le <a href="/serveur_DNS/"><strong>serveur DNS</strong></a> on peut aussi écrire <strong><code>http://node.orleans.sportludique.fr</code></strong> pour y accéder</p>
+<h1 id="etape-3-installation-de-portnainer">Étape 3: Installation de Portnainer</h1>
+<h2 id="31-creation-du-conteneur-portainer">3.1 Création du conteneur Portainer</h2>
+<p>Pour créer le conteneur Portainer, il faut utiliser la commande suivante :</p>
+<pre><code class="language-bash">docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer-ce
+</code></pre>
+<h2 id="32-verification-de-portainer">3.2 Vérification de Portainer</h2>
+<p>Pour vérifier que Portainer fonctionne, dirigez-vous sur internet et copier <strong><code>http://192.168.45.251:9000</code></strong></p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../assets/js/mkdocs.js""></script>
+
+</body>
+
+</html>

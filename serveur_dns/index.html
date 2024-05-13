@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>-Serveur DNS - Doc Orléans</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+        
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Doc Orléans</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#configuration-collapse" aria-expanded="false">
+                    Configuration
+                </a>
+                <div class="collapse" id="configuration-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../plan_adressage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Plan d'adressage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#schéma-⤵️-collapse" aria-expanded="false">
+            Schéma ⤵️
+        </a>
+
+        <div class="collapse" id="schéma-⤵️-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../schema/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Infrastructure
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../ports/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Attribution des Ports
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../switch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Switch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../pfsense/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -PFsense
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../serveur/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#routeur-⤵️-collapse" aria-expanded="false">
+            Routeur ⤵️
+        </a>
+
+        <div class="collapse" id="routeur-⤵️-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../routeurs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Configuration
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../NAT/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NAT
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../http_serv/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur http(s)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Stormshield/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Stormshield
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../resolveur_dns/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Resolveur
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../reverse_proxy/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Reverse Proxy
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur DNS
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../serveur_docker/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur Docker
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../VPN_WireGuard/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur VPN
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Hmail/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur Hmail
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Guac/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Guacamole
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Squid/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Squid
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../reverse_proxy/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../serveur_docker/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item">
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="guide-de-configuration-du-serveur-dns-sur-nutanix">Guide de Configuration du Serveur DNS sur Nutanix</h1>
+<h2 id="etape-1-creation-du-serveur-dns-sur-nutanix">Étape 1: Création du Serveur DNS sur Nutanix</h2>
+<h3 id="11-prerequis">1.1 Prérequis</h3>
+<p>Avant de commencer, assurez-vous d'avoir une instance Nutanix provisionnée et prête à être configurée. Connectez-vous à la console d'administration pour accéder à la configuration de la machine virtuelle.</p>
+<h3 id="12-installation-de-bind9">1.2 Installation de BIND9</h3>
+<p>Sur la machine virtuelle Nutanix, installez BIND9 en utilisant les commandes suivantes :</p>
+<pre><code class="language-bash">sudo apt-get update
+sudo apt-get install bind9
+</code></pre>
+<h3 id="13-configuration-de-bind9">1.3 Configuration de BIND9</h3>
+<p>Après l'installation, vous pouvez configurer le serveur DNS en modifiant le fichier <code>/etc/bind/named.conf.options</code> en utilisant la commande suivante :</p>
+<pre><code class="language-bash">sudo nano /etc/bind/named.conf.options
+</code></pre>
+<p>Dans le fichier de configuration, ajoutez les lignes suivantes :</p>
+<pre><code class="language-bash">forwarders {t-get install bind9
+options {
+    directory &quot;/var/cache/bind&quot;;
+
+    // If there is a firewall between you and nameservers you want
+    // to talk to, you may need to fix the firewall to allow multiple
+    // ports to talk.  See http://www.kb.cert.org/vuls/id/800113
+
+    // If your ISP provided one or more IP addresses for stable
+    // nameservers, you probably want to use them as forwarders.
+    // Uncomment the following block, and insert the addresses replacing
+    // the all-0's placeholder.
+
+    // forwarders {
+    //     121.183.90.205;
+    // };
+
+    dnssec-validation no;
+
+    allow-query {
+        127.0.0.0/8;
+        172.28.0.0/16;
+        192.168.45.0/24;
+        192.168.145.0/24;
+        121.183.90.0/24; 
+    };
+
+    listen-on-v6 { none; };
+    listen-on { any; };
+};
+</code></pre>
+<h3 id="14-redemarrage-de-bind9">1.4 Redémarrage de BIND9</h3>
+<p>Après avoir configuré BIND9, vous pouvez redémarrer le service en utilisant la commande suivante :</p>
+<pre><code class="language-bash">sudo systemctl restart bind9
+</code></pre>
+<h2 id="etape-2-creation-des-fichiers-de-zone">Étape 2: Création des fichiers de zone</h2>
+<h3 id="21-creation-du-fichier-de-zone-interne">2.1: Création du fichier de zone interne</h3>
+<p>Nous avons besoin d'un fichier de zone interne, pour le créer:</p>
+<pre><code class="language-bash">sudo cat db.internal
+</code></pre>
+<p>Dans ce fichier doit se trouver ça :</p>
+<pre><code class="language-bash">
+$TTL 86400
+@   IN  SOA     ns1.orleans.sportludique.fr. admin.orleans.sportludique.fr. (
+                 2019101601 ; Serial
+                 10800      ; Refresh
+                 3600       ; Retry
+                 604800     ; Expire
+                 86400 )    ; Minimum TTL
+
+@           IN  NS      ns1.orleans.sportludique.fr.
+ns1         IN  A       192.168.45.252
+www         IN  A       192.168.45.253
+
+
+
+local.orleans.sportludique.fr.   IN      NS      orl-dc-01.local.orleans.sportludique.fr.
+orl-dc-01.local.orleans.sportludique.fr.         IN      A       172.28.97.10
+
+blog IN CNAME www.orleans.sportludique.fr.
+
+rp1 IN A 192.168.45.250
+node IN CNAME rp1.orleans.sportludique.fr.
+
+double-reverse-proxy IN A 192.168.45.248
+dbrp   IN CNAME double-reverse-proxy.orleans.sportludique.fr.
+
+chat IN CNAME rp1.orleans.sportludique.fr.
+
+</code></pre>
+<p>un fichier de zone interne facilite la résolution des noms de domaine à l'intérieur d'un réseau privé, en associant des noms conviviaux à des adresses IP et en organisant la structure des ressources au sein du réseau local. Cela contribue à une gestion efficace des ressources et à une navigation plus conviviale pour les utilisateurs du réseau.</p>
+<h3 id="22-creation-du-fichier-de-zone-externe">2.2 Création du fichier de zone externe</h3>
+<p>Même principe que le fichier de zone interne, sauf que le fichier doit s'appeler <strong><code>db.external</code></strong></p>
+<pre><code class="language-bash">User
+
+$TTL 86400
+@   IN  SOA     ns1.orleans.sportludique.fr. admin.orleans.sportludique.fr. (
+                 2019101601 ; Serial
+                 10800      ; Refresh
+                 3600       ; Retry
+                 604800     ; Expire
+                 86400 )    ; Minimum TTL
+
+
+@           IN  NS      ns1.orleans.sportludique.fr.
+ns1         IN  A       183.44.45.1
+ns1         IN  A       221.87.145.2
+www         IN  CNAME   ns1.orleans.sportludique.fr.
+
+blog IN CNAME www.orleans.sportludique.fr.
+
+node IN CNAME ns1.orleans.sportludique.fr.
+chat IN CNAME ns1.orleans.sportludique.fr.
+</code></pre>
+<p>Le fichier de zone externe permet d'associer des noms de domaine conviviaux à des adresses IP accessibles depuis l'extérieur du réseau local. Cela permet aux autres utilisateurs d'accéder à des services tels que WordPress, Node.js, Chat et Apache en utilisant des noms de domaine plutôt que des adresses IP. Ainsi, les utilisateurs peuvent accéder à ces services en utilisant des URL plus conviviales.</p>
+<h2 id="etape-3-ajout-des-zones-dns">Étape 3: Ajout des zones DNS</h2>
+<h3 id="31-creation-des-zones-dns">3.1 Création des zones DNS</h3>
+<p>Après avoir configuré BIND9 ainsi que les fichiers de zone, vous pouvez ajouter les zones DNS en modifiant le fichier <code>/etc/bind/named.conf.local</code> en utilisant la commande suivante :</p>
+<pre><code class="language-bash">sudo nano /etc/bind/named.conf.local
+</code></pre>
+<p>Dans le fichier de configuration, ajoutez les lignes suivantes :</p>
+<pre><code class="language-bash">view &quot;externe&quot; {
+        match-clients{
+                !172.28.0.0/16;
+                !192.168.45.0/24;
+                !127.0.0.0/8;
+                any;
+        };
+        zone &quot;orleans.sportludique.fr.&quot; {
+        type master;
+                file &quot;/etc/bind/db.external&quot;;
+                allow-update { none; };
+        };
+
+};
+
+
+view &quot;interne&quot; {
+        match-clients{
+                127.0.0.0/8;
+                172.28.0.0/16;
+                192.168.45.0/24;
+        };
+        zone &quot;orleans.sportludique.fr.&quot; {
+        type master;
+                file &quot;/etc/bind/db.internal&quot;;
+                allow-update { none; };
+        };
+
+};
+
+</code></pre>
+<p>Le code ci-dessus représente une configuration de zones DNS pour le serveur BIND9, définissant deux vues distinctes : "externe" et "interne".</p>
+<h3 id="vue-externe">Vue Externe</h3>
+<p>La vue "externe" est destinée aux clients externes au réseau local. Elle spécifie les adresses IP des clients autorisés à accéder à cette vue à l'aide de la directive <code>match-clients</code>. Dans cet exemple, les adresses IP des réseaux <code>172.28.0.0/16</code>, <code>192.168.45.0/24</code>, et <code>127.0.0.0/8</code> sont exclues, ce qui signifie que tous les autres clients sont autorisés.</p>
+<p>La zone "orleans.sportludique.fr." est définie comme une zone maître (master) dans cette vue. Elle utilise le fichier de zone <code>/etc/bind/db.external</code> pour stocker les enregistrements DNS de cette zone. La directive <code>allow-update</code> est définie sur "none", ce qui signifie qu'aucune mise à jour dynamique n'est autorisée pour cette zone.</p>
+<h3 id="vue-interne">Vue Interne</h3>
+<p>La vue "interne" est destinée aux clients internes au réseau local. Elle spécifie les adresses IP des clients autorisés à accéder à cette vue. Dans cet exemple, les adresses IP des réseaux <code>127.0.0.0/8</code>, <code>172.28.0.0/16</code>, et <code>192.168.45.0/24</code> sont autorisées.</p>
+<p>La zone "orleans.sportludique.fr." est également définie comme une zone maître dans cette vue. Elle utilise le fichier de zone <code>/etc/bind/db.internal</code> pour stocker les enregistrements DNS de cette zone. La directive <code>allow-update</code> est définie sur "none", ce qui signifie qu'aucune mise à jour dynamique n'est autorisée pour cette zone.</p>
+<p>Ces configurations permettent de gérer les zones DNS de manière différente en fonction de la source des requêtes DNS. Les clients externes auront accès à la vue "externe" avec les enregistrements DNS correspondants, tandis que les clients internes auront accès à la vue "interne" avec les enregistrements DNS correspondants.</p>
+<p><strong>Note :</strong> Il est important de redémarrer le service bind9 à chaque modification des fichiers de configuration.</p>
+<pre><code class="language-bash">sudo systemctl restart bind9
+</code></pre></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../assets/js/mkdocs.js""></script>
+
+</body>
+
+</html>

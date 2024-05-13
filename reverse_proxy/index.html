@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>-Reverse Proxy - Doc Orléans</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+        
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Doc Orléans</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#configuration-collapse" aria-expanded="false">
+                    Configuration
+                </a>
+                <div class="collapse" id="configuration-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../plan_adressage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Plan d'adressage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#schéma-⤵️-collapse" aria-expanded="false">
+            Schéma ⤵️
+        </a>
+
+        <div class="collapse" id="schéma-⤵️-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../schema/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Infrastructure
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../ports/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Attribution des Ports
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../switch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Switch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../pfsense/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -PFsense
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../serveur/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#routeur-⤵️-collapse" aria-expanded="false">
+            Routeur ⤵️
+        </a>
+
+        <div class="collapse" id="routeur-⤵️-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../routeurs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Configuration
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../NAT/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NAT
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../http_serv/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur http(s)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Stormshield/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Stormshield
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../resolveur_dns/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Resolveur
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Reverse Proxy
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../serveur_dns/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur DNS
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../serveur_docker/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur Docker
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../VPN_WireGuard/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur VPN
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Hmail/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur Hmail
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Guac/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Guacamole
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Squid/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Squid
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../resolveur_dns/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../serveur_dns/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item">
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="compte-rendu-configuration-nginx-et-reverse-proxy">Compte Rendu - Configuration Nginx et Reverse Proxy</h1>
+<h2 id="objectif">Objectif</h2>
+<p>Configurer Nginx en tant que serveur web et reverse proxy sur un serveur Debian 12. Rediriger le trafic HTTP vers HTTPS, mettre en place un reverse proxy pour plusieurs sites, et configurer SSL.</p>
+<h2 id="etapes-accomplies">Étapes Accomplies</h2>
+<h3 id="1-installation-de-nginx">1. Installation de Nginx</h3>
+<p></br>
+<strong><code>sudo apt update</code></strong>
+</br>
+<strong><code>sudo apt install nginx</code></strong></p>
+<ol>
+<li>
+<p>Configuration de Base
+Réglage du pare-feu pour autoriser le trafic HTTP/HTTPS.
+Démarrage du service Nginx.</p>
+</li>
+<li>
+<h1 id="reverse-proxy-avec-nginx">Reverse Proxy avec Nginx</h1>
+<p>Configuration d'un fichier de site .conf dans le dossier /etc/nginx/nginx.conf pour le reverse proxy.
+Utilisation de proxy_pass pour rediriger le trafic vers une application interne.</p>
+</li>
+</ol>
+<h1 id="redirection-http-vers-https">Redirection HTTP vers HTTPS</h1>
+<p>Configuration des blocs de serveurs pour rediriger le trafic HTTP vers HTTPS.
+Utilisation de return 301 pour effectuer la redirection.</p>
+<h1 id="configuration-ssltls">Configuration SSL/TLS</h1>
+<p>Création d'un fichier PEM combinant certificat et clé privée.
+Configuration du serveur Nginx pour utiliser le fichier PEM.</p>
+<h1 id="gestion-de-plusieurs-sites">Gestion de Plusieurs Sites</h1>
+<p>Configuration de plusieurs blocs de serveurs pour différents domaines.
+Utilisation de proxy_pass pour rediriger le trafic vers des serveurs internes distincts.</p>
+<pre><code>    server {
+      listen 80;
+      server_name orleans.sportludique.fr;
+      return 301 https://orleans.sportludique.fr$request_uri;
+    }
+
+    server {
+         listen 80;
+         server_name blog.orleans.sportludique.fr;
+         return 301 https://blog.orleans.sportludique.fr$request_uri;
+    }
+
+    server {
+
+            listen 443 ssl;
+
+            server_name orleans.sportludique.fr;
+
+
+            ssl_certificate /orleans-sportludique/certificat_et_cle.pem;
+
+            ssl_certificate_key /orleans-sportludique/certificat_et_cle.pem;
+
+
+
+            ssl_protocols TLSv1.2 TLSv1.3;
+
+            ssl_prefer_server_ciphers off;
+
+
+
+
+
+            location / {
+
+                        proxy_pass https://192.168.45.253;
+
+                        proxy_set_header Host $host;
+
+                        proxy_set_header X-Real-IP $remote_addr;
+
+                        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+                        proxy_set_header X-Forwarded-Proto $scheme;
+
+            }
+
+     }
+
+
+
+     server {
+
+             listen 443 ssl;
+
+             server_name blog.orleans.sportludique.fr;
+
+
+            ssl_certificate /orleans-sportludique/certificat_et_cle.pem;
+            ssl_certificate_key /orleans-sportludique/certificat_et_cle.pem;
+            ssl_protocols TLSv1.2 TLSv1.3;
+            ssl_prefer_server_ciphers off;
+
+
+
+           # Autres directives de configuration SSL/TLS...
+
+
+
+             location / {
+
+                         proxy_pass https://192.168.45.253;
+
+                         proxy_set_header Host $host;
+
+                         proxy_set_header X-Real-IP $remote_addr;
+
+                         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+                         proxy_set_header X-Forwarded-Proto $scheme;
+
+             }
+
+     }
+     server {
+
+             listen 80;
+
+             server_name node.orleans.sportludique.fr;
+
+
+           # Autres directives de configuration SSL/TLS...
+
+
+
+             location / {
+
+                         proxy_pass http://192.168.45.251:80;
+
+                         proxy_set_header Host $host;
+
+                         proxy_set_header X-Real-IP $remote_addr;
+
+                         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+                         proxy_set_header X-Forwarded-Proto $scheme;
+
+             }
+
+     }
+</code></pre>
+<ol>
+<li>Vérification et Tests
+Utilisation de commandes comme sudo nginx -t pour vérifier la configuration.
+Tests d'accès aux sites depuis un navigateur pour s'assurer que les redirections et le reverse proxy fonctionnent correctement.</li>
+<li>Problèmes Rencontrés
+Gestion des erreurs liées à la suppression d'une entrée statique NAT sur un routeur Cisco.
+Vérification des traductions NAT, connexions actives, et suppression des sessions pour résoudre des problèmes de suppression d'entrée NAT.
+Conclusion
+La configuration de Nginx en tant que serveur web et reverse proxy a été réalisée avec succès. Les différentes étapes ont permis de mettre en place des redirections, de configurer SSL/TLS, et de gérer plusieurs sites sur un même serveur.</li>
+</ol>
+<h1 id="compte-rendu-dinstallation-et-configuration-de-heartbeat">Compte Rendu d'Installation et Configuration de Heartbeat</h1>
+<p>Configuration de ha.cf :</p>
+<p>Sur le serveur srv-nginx2 :</p>
+<pre><code>    node srv-nginx2
+    ucast ens3 192.168.45.250
+    node srv-nginx
+    ucast ens3 192.168.45.248
+</code></pre>
+<p>Sur le serveur srv-nginx :</p>
+<pre><code>    node srv-nginx2
+    ucast ens3 192.168.45.250
+    node srv-nginx
+    ucast ens3 192.168.45.248
+</code></pre>
+<p>Ces configurations permettent aux serveurs de communiquer entre eux via le réseau spécifié.</p>
+<p>Création du fichier authkeys :</p>
+<p>Génération d'une clé d'authentification avec la commande :</p>
+<pre><code>    export AUTH_KEY="$(command dd if='/dev/urandom' bs=512 count=1 2&gt;'/dev/null' | command openssl sha1 | command cut --delimiter=' ' --fields=2)"
+</code></pre>
+<p>Écriture de la clé générée dans /etc/ha.d/authkeys.
+Configuration haresources :</p>
+<p>Sur le serveur srv-nginx2 :</p>
+<p><strong><code>srv-nginx2 IPaddr::192.168.45.200/24/ens3</code></strong>
+Cette configuration spécifie que srv-nginx2 est le serveur préféré pour l'adresse IP virtuelle 192.168.45.200.</p>
+<p>Sur le serveur srv-nginx :</p>
+<p><strong><code>srv-nginx</code></strong></p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../assets/js/mkdocs.js""></script>
+
+</body>
+
+</html>

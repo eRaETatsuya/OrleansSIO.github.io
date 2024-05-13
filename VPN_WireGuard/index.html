@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>-Serveur VPN - Doc Orléans</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+        
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">Doc Orléans</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href=".."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Home
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href=".."
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#configuration-collapse" aria-expanded="false">
+                    Configuration
+                </a>
+                <div class="collapse" id="configuration-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../plan_adressage/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Plan d'adressage
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#schéma-⤵️-collapse" aria-expanded="false">
+            Schéma ⤵️
+        </a>
+
+        <div class="collapse" id="schéma-⤵️-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../schema/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Infrastructure
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../ports/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Attribution des Ports
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../switch/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Switch
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../pfsense/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -PFsense
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../serveur/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="#" class="
+            drac-anchor-secondary btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+            data-bs-toggle="collapse" data-bs-target="#routeur-⤵️-collapse" aria-expanded="false">
+            Routeur ⤵️
+        </a>
+
+        <div class="collapse" id="routeur-⤵️-collapse">
+            <ul class="mb-5 drac-list drac-list-none">
+                    
+    <li class="drac-box-ternary">
+        <a href="../routeurs/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Configuration
+        </a>
+    </li>
+                    
+    <li class="drac-box-ternary">
+        <a href="../NAT/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            NAT
+        </a>
+    </li>
+            </ul>
+        </div>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../http_serv/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur http(s)
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Stormshield/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Stormshield
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../resolveur_dns/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Resolveur
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../reverse_proxy/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Reverse Proxy
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../serveur_dns/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur DNS
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../serveur_docker/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur Docker
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="./"
+            class=" active 
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur VPN
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Hmail/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Serveur Hmail
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Guac/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Guacamole
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../Squid/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            -Squid
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+        <div class="container-fluid">
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../serveur_docker/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../Hmail/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item">
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="creation-du-serveur-vpn">Création du serveur VPN</h1>
+<h1 id="etape-1-creation-du-serveur-vpn-sur-nutanix">Étape 1: Création du Serveur VPN sur Nutanix</h1>
+<h2 id="11-prerequis">1.1 Prérequis</h2>
+<p>Avant de commencer, il faut créer la machine virtuelle sur Nutanix, avec un OS Debian.</p>
+<h2 id="12-installation-de-wireguard">1.2 Installation de WireGuard</h2>
+<p>Pour installer Wireguard, on suit le tuto de it-connect
+Sur la machine, recopier ces lignes.</p>
+<pre><code>sudo apt-get update
+sudo apt-get install wireguard
+</code></pre>
+<p>création interface wireguard :</p>
+<pre><code>en premier il faut générer une clé privé et une clé publique:
+wg genkey | sudo tee /etc/wireguard/wg-private.key | wg pubkey | sudo tee /etc/wireguard/wg-public.key
+</code></pre>
+<p>création du fichier de conf de l'interface :</p>
+<pre><code>sudo nano /etc/wireguard/wg0.conf
+</code></pre>
+<p>contenu du fichier :</p>
+<pre><code>[Interface]
+Address = 10.255.255.1/24
+SaveConfig = true
+ListenPort = 51820
+PrivateKey = &lt;clé privée du serveur&gt;
+</code></pre>
+<p>Pour obtenir la clé privé il faut faire la commande suivante :</p>
+<pre><code>sudo cat /etc/wireguard/wg-private.key
+</code></pre>
+<p>Démarrage de l'interface : </p>
+<pre><code>sudo wg-quick up wg0
+</code></pre>
+<p>attention a chaque fois qu'on manipule le fichier de conf de l'interface il faut que cette dernière soit éteinte avec la commande :</p>
+<pre><code>sudo wg-quick down wg0
+</code></pre>
+<h2 id="13-activation-de-lip-forwarding">1.3 Activation de l'IP Forwarding</h2>
+<p>Dans le fichier de conf suivant : </p>
+<pre><code>sudo nano /etc/sysctl.conf
+</code></pre>
+<p>Ajoutez cette ligne : </p>
+<pre><code>net.ipv4.ip_forward=1
+</code></pre>
+<h2 id="14-activation-de-lip-forwarding">1.4 Activation de l'IP Forwarding</h2>
+<p>Activer l'IP Masquerade. Cela revient à faire de notre serveur vpn un Routeur qui va NAT les requêtes du réseau vpn (10.255.255.0/24) vers les différents réseaux locaux.</p>
+<p>Installer ufw :</p>
+<pre><code>sudo apt-get install ufw
+</code></pre>
+<p>Autoriser des ports :</p>
+<pre><code>ssh -&gt; sudo ufw allow 22/tcp
+wireguard -&gt; sudo ufw allow 51820/udp
+</code></pre>
+<p>Dans le fichier /etc/ufw/before.rules :</p>
+<pre><code>sudo nano /etc/ufw/before.rules
+
+ajoutez ces lignes :
+
+# NAT - IP masquerade
+*nat
+:POSTROUTING ACCEPT [0:0]
+-A POSTROUTING -o ens3 -j MASQUERADE
+
+# End each table with the 'COMMIT' line or these rules won't be processed
+COMMIT
+
+
+# autoriser le forwarding pour le réseau distant de confiance (+ le réseau du VPN)
+-A ufw-before-forward -s 192.168.45.0/24 -j ACCEPT
+-A ufw-before-forward -d 192.168.45.0/24 -j ACCEPT
+-A ufw-before-forward -s 10.255.255.0/24 -j ACCEPT
+-A ufw-before-forward -d 10.255.255.0/24 -j ACCEPT
+</code></pre>
+<p>Après avoir modifier ce fichier :</p>
+<pre><code>sudo ufw enable
+
+sudo systemctl restart ufw
+</code></pre>
+<h1 id="etape-2-installation-wireguard-cote-client">Étape 2: Installation Wireguard côté client :</h1>
+<h2 id="21-creation-dune-vm-client-sur-virtualbox">2.1 Création d'une vm client sur virtualbox</h2>
+<h2 id="22-installation-du-logiciel-wireguard-sur-cette-vm">2.2 Installation du logiciel wireguard sur cette vm</h2>
+<h2 id="23-creation-du-tunnel">2.3 Création du tunnel</h2>
+<pre><code>- cliquer sur le bouton ajouter un tunnel vide
+
+- dans la fenêtre de configuration qui s'ouvre rentrer dans le bloc interface l'information : Address = 10.255.255.2/24
+
+- ajouter un bloc [Peer]
+
+- dans ce bloc ajouter la clé public du serveur vpn qu'on peut obtenir avec la commande "sudo cat /etc/wireguard/wg-public.key". PublicKey = &lt;clé publique du serveur&gt;
+
+- Ajouter l'information AllowedIPs = 10.255.255.0/24, 192.168.45.0/24, 172.28.0.0/16
+
+- Ajouter l'ip publique suivi du port : EndPoint = ip_publique:51820
+(au préalable il faut avoir rediriger le port 51820 vers le serveur vpn sur le routeur)
+</code></pre>
+<h2 id="24-declaration-du-client-du-cote-du-serveur">2.4 Déclaration du client du coté du serveur</h2>
+<p>Il faut en premier éteindre l'interface wireguard</p>
+<pre><code>sudo wg-quick down wg0
+</code></pre>
+<p>Ensuite dans le fichier de conf de cette interface on va déclarer le client</p>
+<pre><code>sudo nano /etc/wireguard/wg0.conf
+
+ajouter le bloc [Peer] avec la clé publique du client wireguard PublicKey = &lt;clé publique client&gt;
+ensuite l'adresse ip du client du réseau vpn AllowedIPs = 10.255.255.2/32
+</code></pre>
+<p>On peut maintenant rallumer l'interface après avoir enregistré la configuration</p>
+<pre><code>sudo wg-quick up wg0
+</code></pre>
+<h1 id="etape-3-connexion-au-vpn-depuis-le-client">Étape 3: Connexion au VPN depuis le client :</h1>
+<h2 id="31-se-connecter-au-vpn-du-prof-sur-son-pc">3.1 Se connecter au vpn du prof sur son pc :</h2>
+<p>Se connecter avec OpenVPN au VPN du professeur</p>
+<h2 id="32-se-connecter-au-vpn-wireguard-sur-une-vm">3.2 Se connecter au vpn Wireguard sur une vm:</h2>
+<p>Il faut créer une vm windows 10 qui est connecté en réseau NAT dans la configuration de la VM.</p>
+<p>Ensuite il faut importer la conf vpn dans le client wireguard et cliquer sur "Activer".</p></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../assets/js/mkdocs.js""></script>
+
+</body>
+
+</html>
